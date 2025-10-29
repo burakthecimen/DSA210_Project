@@ -21,15 +21,15 @@ Kevin Durant is widely regarded as one of the most efficient and versatile score
 ## 📊 3. Data Sources
 - **Basketball Reference – Game Logs:** Game-by-game statistics such as points, minutes, FG%, and 3P%.  
   🔗 [https://www.basketball-reference.com/players/d/duranke01/gamelog/](https://www.basketball-reference.com/players/d/duranke01/gamelog/)
-- **NBA Stats API:** Advanced analytics such as true shooting percentage (TS%), usage rate, and shot type distributions.  
-  🔗 [https://documenter.getpostman.com/view/24232555/2s93shzpR3](https://documenter.getpostman.com/view/24232555/2s93shzpR3)
+- **ESPN Stats:** Advanced Game Statics.
+  https://www.espn.com/nba/player/advancedstats/_/id/3202/kevin-durant?utm_source=chatgpt.com
 
 The dataset will include games between **2017 and 2025**, covering both pre-injury and post-injury periods.
 
 ---
 
 ## 🧠 4. Data Collection and Preparation Plan
-1. **Data Download:** Export Kevin Durant’s game logs (CSV) and gather injury dates from Wikipedia/ESPN.  
+1. **Data Download:** Export Kevin Durant’s game logs (CSV) and gather injury dates from ESPN.  
 2. **Integration:** Combine game logs with advanced metrics from the NBA Stats API (e.g., TS%, usage rate).  
 3. **Labeling:** Mark each game as *pre-injury* or *post-injury* based on the June 2019 Achilles injury.  
 4. **Feature Engineering:** Add new columns such as:
