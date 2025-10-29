@@ -33,8 +33,12 @@ Kevin Durant is widely regarded as one of the most efficient and versatile score
   Useful for analyzing how Durant’s presence affects team success and how different team systems influence his efficiency and style of play.  
   🔗 [https://www.statmuse.com/nba/player/kevin-durant-985](https://www.statmuse.com/nba/player/kevin-durant-985)
 
+- **GitHub – NBA Shots 2004–2025 Dataset:**  
+  A comprehensive open-source dataset containing every NBA shot attempt from 2004 to 2025. The dataset includes shot location coordinates (x/y), distance from the basket, shot result (make/miss), player name, and team information. This will be used to analyze **how Kevin Durant’s shot selection and spatial tendencies changed** before and after his 2019 Achilles injury for instance, whether he began taking more perimeter jumpers and fewer drives to the rim.  
+  🔗 [https://github.com/DomSamangy/NBA_Shots_04_25](https://github.com/DomSamangy/NBA_Shots_04_25)
 
-The dataset will include games between 2013 and 2025, covering both pre-injury and post-injury periods.
+📅 **Time Range:** The dataset will include games between 2013 and 2025, covering both pre-injury and post-injury periods.  
+The June 2019 Achilles injury serves as the dividing point for labeling games as `pre_injury` or `post_injury`.
 
 ---
 
