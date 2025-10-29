@@ -1,5 +1,6 @@
 # Kevin Durant: How Injuries Affected His Performance and Playing Style
 
+---
 ## 🏀 Introduction
 This project investigates how Kevin Durant’s performance and playing style evolved after major injuries during his NBA career, especially his 2019 Achilles tendon rupture.  
 The goal is to explore both **statistical performance changes** and **behavioral adjustments** — such as shot selection and offensive efficiency — to understand how an elite player adapts his game after a significant physical setback.
