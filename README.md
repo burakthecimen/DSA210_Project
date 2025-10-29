@@ -2,16 +2,12 @@
 
 
 ## 🏀 Introduction
-This project investigates how Kevin Durant’s performance and playing style evolved after major injuries during his NBA career, especially his 2019 Achilles tendon rupture.  
-The goal is to explore both **statistical performance changes** and **behavioral adjustments** — such as shot selection and offensive efficiency — to understand how an elite player adapts his game after a significant physical setback.
+This project investigates how Kevin Durant’s performance and playing style evolved after major injuries during his NBA career, especially his 2019 Achilles tendon rupture. The goal is to explore both statistical performance changes and behavioral adjustments such as shot selection and offensive efficiency to understand how an elite player adapts his game after a significant physical setback.
 
 ---
 
 ## 🎯 1. Motivation
-Kevin Durant is widely regarded as one of the most efficient and versatile scorers in NBA history.  
-However, his career has been marked by several serious injuries that challenged his consistency and forced him to adapt his role on the court.  
-This project aims to analyze how Durant’s on-court performance and overall playing style changed before and after his major injuries.  
-By studying changes in scoring, efficiency, and shot selection, the project seeks to uncover how elite players recover and evolve their game after major injuries.
+Kevin Durant is widely regarded as one of the most efficient and versatile scorers in NBA history. However, his career has been marked by several serious injuries that challenged his consistency and forced him to adapt his role on the court. This project aims to analyze how Durant’s on-court performance and overall playing style changed before and after his major injuries. By studying changes in scoring, efficiency, and shot selection, the project seeks to uncover how elite players recover and evolve their game after major injuries.
 
 ---
 
@@ -27,8 +23,6 @@ By studying changes in scoring, efficiency, and shot selection, the project seek
   🔗 [https://www.basketball-reference.com/players/d/duranke01/gamelog/](https://www.basketball-reference.com/players/d/duranke01/gamelog/)
 - **NBA Stats API:** Advanced analytics such as true shooting percentage (TS%), usage rate, and shot type distributions.  
   🔗 [https://documenter.getpostman.com/view/24232555/2s93shzpR3](https://documenter.getpostman.com/view/24232555/2s93shzpR3)
-- **Wikipedia & ESPN Injury Reports:** Dates and descriptions of Durant’s injuries for labeling pre/post periods.  
-  🔗 [https://en.wikipedia.org/wiki/Kevin_Durant](https://en.wikipedia.org/wiki/Kevin_Durant)
 
 The dataset will include games between **2017 and 2025**, covering both pre-injury and post-injury periods.
 
