@@ -63,9 +63,16 @@ The June 2019 Achilles injury serves as the dividing point for labeling games as
 ---
 
 ## 🧩 6. Expected Outcomes
+
+This project aims to find data-driven answers to the following research questions:  
+- How did Kevin Durant’s statistical performance (points, FG%, 3P%, minutes) change before and after his 2019 Achilles injury?  
+- Did his playing style — such as shot selection, pace, or reliance on mid-range vs. three-point shots — shift in the post-injury seasons?  
+- Is there evidence of a gradual recovery or adaptation trend across the following seasons?
+
+Expected findings include:  
 - Quantified differences in performance metrics before and after the injury.  
 - Visual evidence of how Durant’s play style shifted (for example, more perimeter-oriented or efficient shot distribution).  
-- Insights on recovery and adaptation strategies among elite athletes.  
+- Insights into recovery and adaptation strategies among elite athletes.  
 - Clear, data-driven conclusions about the trade-off between scoring volume and long-term efficiency.
 
 ---
