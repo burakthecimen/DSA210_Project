@@ -49,7 +49,115 @@ The June 2019 Achilles injury serves as the dividing point for labeling games as
 4. **Feature Engineering:** Add new columns such as:
    - 3PA/FGA ratio → reflects perimeter vs. inside shot tendency  
    - Minutes/game → workload intensity  
-   - Efficiency differential (TS% change per season)  
+   - Efficiency differential (TS% change per season)
+  
+---
+
+# Data Preparation & Processing Pipeline
+
+All data preparation steps were automated using a unified Python pipeline.
+
+### ✔ Game Log Processing (2013–2025)
+- Imported 13 separate game log sheets  
+- Cleaned column names and formats  
+- Computed season-level averages:  
+  - PPG  
+  - FG% / 3P% / eFG%  
+  - Rebounds, assists, steals, blocks  
+  - Turnovers, fouls  
+  - Minutes per game  
+- **Export:** `kd_season_averages.xlsx`
+
+### ✔ Advanced Statistics Processing
+- Loaded TS%, USG%, DRtg, MPG  
+- Converted season strings to numeric  
+- Merged with game log outputs  
+- Generated trend charts  
+- **Export:** `kd_advanced_with_charts.xlsx`
+
+### ✔ Shooting Data Processing
+- Extracted: Shot Distance, Shot Type, Shot Points  
+- Pivoted into one-row-per-season  
+- Normalized all values into % distributions  
+- **Exports:**  
+  - `kd_shot_trends_single.xlsx`  
+  - `EDA_Results.xlsx`
+
+### ✔ Injury Labeling
+
+| Label | Seasons |
+|-------|---------|
+| Pre-Injury | 2013–2018 |
+| Post-Injury | 2020–2025 |
+| 2019 excluded | Injury year |
+
+---
+
+# Exploratory Data Analysis (EDA)
+
+### ✔ Season Performance Trends
+- PPG ↓ after injury  
+- FG% and eFG% slight decline  
+- 3PT% stable or ↑  
+- MPG ↓ significantly  
+
+### ✔ Shooting Style Evolution
+**Shot Distances**
+- Rim attempts ↓↓  
+- Midrange ↑  
+- 3PT slightly ↑  
+
+**Shot Types**
+- Jump shots ↑↑  
+- Dunks ↓  
+- Layups ↓  
+
+### ✔ Advanced Stats Trends
+- TS% stayed elite  
+- USG% ↓  
+- DRtg worsened  
+- MPG ↓ due to load management  
+
+---
+
+# Hypothesis Testing
+
+### 1️⃣ T-Test: PPG (Pre vs Post)
+- p < 0.05 → Significant difference
+
+### 2️⃣ T-Test: TS% (Pre vs Post)
+- p > 0.05 → No significant change
+
+### 3️⃣ Chi-Square Tests
+- Shot Distance Distribution → p << 0.05  
+- Shot Type Distribution → p << 0.05  
+
+---
+
+# Outputs Generated
+
+| File | Description |
+|------|-------------|
+| kd_season_averages.xlsx | Game log season aggregates |
+| kd_advanced_with_charts.xlsx | Advanced metrics + charts |
+| kd_shot_trends_single.xlsx | Shot distance/type trends |
+| EDA_Results.xlsx | Unified EDA results |
+
+Included charts:
+- PPG / FG% / 3P% / eFG% time series  
+- Shot distance trends  
+- Shot type distributions  
+- Pre vs Post radar chart  
+
+---
+
+# Conclusions
+
+- Durant shifted toward skill-based scoring after the Achilles injury  
+- Fewer rim attacks, more jump shots  
+- MPG and defensive impact drop  
+- TS% remains elite  
+- Strong evidence of major style adaptation post-injury
 ---
 
 ## 📈 5. Analysis Plan
