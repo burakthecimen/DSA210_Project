@@ -185,4 +185,96 @@ Expected findings include:
 
 ---
 
+##  7. Machine Learning Analysis: Shot Selection (Pre vs Post Injury)
+
+In addition to descriptive statistics and visual trend analysis, a supervised machine learning approach was applied to examine **how Kevin Durant’s shot selection patterns differ before and after his 2019 Achilles injury**.
+
+The purpose of this analysis is **interpretability**, not prediction.  
+The model is used to identify which shot-related features best distinguish pre-injury and post-injury seasons.
+
+---
+
+### 7.1 Feature Construction
+
+Shot-level data were aggregated at the **season level** using shooting split statistics.  
+Two groups of features were created:
+
+**Shot Distance Features**
+- At Rim  
+- 3–10 ft  
+- 10–16 ft  
+- 16 ft to < 3PT  
+- 3PT  
+
+**Shot Type Features**
+- Jump Shot  
+- Lay-Up  
+- Dunk  
+- Hook Shot  
+- Tip Shot  
+
+For each season, shot attempts were normalized into **usage shares (FGA share)** so that all features represent proportions rather than raw counts.  
+This normalization allows fair comparison across seasons with different game counts and minutes played.
+
+Each row in the dataset corresponds to **one NBA season**.
+
+---
+
+### 7.2 Target Variable: Injury Period Label
+
+Seasons were labeled based on injury timing:
+
+- **Pre-Injury (0):** 2013–2018  
+- **Post-Injury (1):** 2020–2025  
+- **Transition:** 2019 (excluded from training)
+
+The 2019 season was excluded to avoid ambiguity due to injury recovery and limited availability.
+
+---
+
+### 7.3 Model Selection and Training
+
+A **Random Forest Classifier** was chosen due to its ability to:
+- Capture non-linear relationships  
+- Handle correlated input features  
+- Provide interpretable feature importance scores  
+
+The dataset was split into training and test sets using stratified sampling.  
+All features were standardized prior to model training.
+
+This model is not intended for future performance prediction, but rather for **descriptive analysis of playing style changes**.
+
+---
+
+### 7.4 Results and Feature Importance
+
+The trained model successfully distinguishes between pre- and post-injury seasons despite the limited sample size.
+
+Feature importance analysis indicates that the most influential variables include:
+- Shot attempts at the rim  
+- Lay-ups and dunks  
+- Mid-range shots (10–16 ft)  
+- Overall jump shot usage  
+
+These results align with basketball intuition, suggesting a post-injury shift away from physically demanding rim attacks toward skill-based scoring.
+
+The feature importance visualization is provided below:
+
+*(See: `ml_feature_importance_shots.png`)*
+
+---
+
+### 7.5 Interpretation and Limitations
+
+The machine learning results suggest a **strategic adaptation** rather than a decline in performance.  
+Kevin Durant appears to preserve scoring efficiency by adjusting shot selection following his injury.
+
+Limitations of this analysis include:
+- Small sample size (season-level data)
+- Use of aggregated statistics
+- Interpretive (not predictive) modeling approach
+
+Despite these limitations, the ML analysis provides meaningful insight into post-injury playing style evolution.
+
+---
 
