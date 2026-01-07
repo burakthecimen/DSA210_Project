@@ -278,3 +278,7 @@ Despite these limitations, the ML analysis provides meaningful insight into post
 
 ---
 
+### About Libraries
+
+All Python libraries used in this project are listed in the `requirements.txt` file.
+
