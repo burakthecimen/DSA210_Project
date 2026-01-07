@@ -1,0 +1,15 @@
+Libraries Used
+
+This project was implemented in Python using the following libraries:
+
+- pandas: Used for loading, cleaning, and aggregating game-level and season-level NBA data.
+- numpy: Used for numerical operations and feature calculations.
+- matplotlib: Used for creating time-series plots, shot distribution charts, and comparison visualizations.
+- os: Used for file and directory management within the project pipeline.
+- glob: Used to automatically locate and load multiple data files.
+- math (pi): Used for radar chart and angle-based visualizations.
+- scikit-learn:
+    - `train_test_split`: Used to create training and test sets.
+    - `StandardScaler`: Used to standardize numerical features.
+    - `RandomForestClassifier`: Used to analyze differences in shot selection patterns before and after injury.
+    - `classification_report`, `accuracy_score`: Used for basic model evaluation and sanity checks.
